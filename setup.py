@@ -26,7 +26,7 @@ def requireModules(moduleNames=None):
     return moduleNames
 
 scripts = [
-    'buildpack=__init__:Buildpack',
+    'django=__init__:Buildpack',
 ]
 
 setup(
