@@ -25,9 +25,13 @@ def requireModules(moduleNames=None):
 
     return moduleNames
 
+scripts = [
+    'buildpack=__init__:Buildpack',
+]
+
 setup(
     name='oldfashion-buildpack-django',
-    packages=["oldfashion-buildpack-django"],
+
     version='1.0.0',
 
     author='Platon Korzh',
@@ -43,5 +47,7 @@ setup(
 
     ]),
 
-    include_package_data = True
+    include_package_data = True,
+
+    entry_points={'oldfashion.buildpack': scripts}
 )
