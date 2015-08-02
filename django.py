@@ -1,7 +1,7 @@
 import pkg_resources
 
 class Buildpack():
-	def detect(self, files, , **kwargs):
+	def detect(self, files, **kwargs):
 		return 'manage.py' in files
 
 	def get_build_context_path(self):
