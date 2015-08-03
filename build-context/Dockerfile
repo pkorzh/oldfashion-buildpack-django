@@ -1,8 +1,7 @@
 FROM ubuntu:14.04
 
-RUN apt-get update
-
-RUN apt-get install -y build-essential python python-dev python-pip python-setuptools nginx supervisor
+RUN apt-get update -y
+RUN apt-get install -y build-essential python python-dev python-pip python-setuptools nginx supervisor libmysqlclient-dev libpq-dev
 
 RUN pip install uwsgi
 
